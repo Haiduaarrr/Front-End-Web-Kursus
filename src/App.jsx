@@ -1,8 +1,8 @@
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route, HashRouter } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
 
 import NavbarComponent from "./components/NavbarComponent";
 import FooterComponent from "./components/FooterComponent";
-
 
 import HomePage from "./pages/HomePage";
 import KelasPage from "./pages/KelasPage";
@@ -14,14 +14,15 @@ function App() {
   return (
     <div>
       <NavbarComponent />
-
-      <Routes>
+      {/* <Routes> */}
+      <HashRouter>
         <Route path="/" element={<HomePage />} />
         <Route path="/kelas" element={<KelasPage />} />
         <Route path="/testimonial" element={<TestimonialPage />} />
         <Route path="/syaratketen" element={<SyaratKetentuanPage />} />
         <Route path="/faq" element={<FaqPage />} />
-      </Routes>
+      </HashRouter>
+      {/* </Routes> */}
 
       <FooterComponent />
     </div>
