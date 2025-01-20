@@ -1,0 +1,5 @@
+INI ADALAH CATATAN KETIKA SAYA BELAJAR SAAT MENIRU WEBSITE INI
+
+# INSTALL YANG DIPRLUKAN:
+1. npm install swiper (untuk bagian testimonial)
+2. npm 
