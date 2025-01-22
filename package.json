@@ -1,7 +1,7 @@
 {
-  "homepage": "https://haiduaarrr.github.io/Front-End_Web-Kursus/",
   "name": "react-website-course",
   "private": true,
+  "homepage": "https://nm-react-website-course.netlify.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

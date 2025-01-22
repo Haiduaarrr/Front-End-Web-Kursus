@@ -1,5 +1,5 @@
-// import { Routes, Route, HashRouter } from "react-router-dom";
-import { Route, HashRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+// import { Route, HashRouter } from "react-router-dom";
 
 import NavbarComponent from "./components/NavbarComponent";
 import FooterComponent from "./components/FooterComponent";
@@ -14,15 +14,17 @@ function App() {
   return (
     <div>
       <NavbarComponent />
-      {/* <Routes> */}
+      
       <HashRouter>
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/kelas" element={<KelasPage />} />
         <Route path="/testimonial" element={<TestimonialPage />} />
         <Route path="/syaratketen" element={<SyaratKetentuanPage />} />
         <Route path="/faq" element={<FaqPage />} />
+      </Routes>
       </HashRouter>
-      {/* </Routes> */}
+      
 
       <FooterComponent />
     </div>
