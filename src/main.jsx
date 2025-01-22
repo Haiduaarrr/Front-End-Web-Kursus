@@ -13,14 +13,19 @@ AOS.init();
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './dist/CSS/main.css'
 import 'animate.css';
-import { BrowserRouter } from 'react-router-dom'
 
+import { HashRouter } from 'react-router-dom'
+//  HashRouter hanya bisa digunakan untuk production.
+// Karena saya ingin menggunakan github pages
+
+// import { BrowserRouter } from 'react-router-dom'
+// BrowserRouter hanya bisa digunakan untuk development, bekerja pada struktur folder/direktori.
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 )
